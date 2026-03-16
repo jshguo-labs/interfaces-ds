@@ -1,0 +1,13 @@
+node_modules
+.next
+out
+.DS_Store
+*.log
+*.tsbuildinfo
+.env*
+next-env.d.ts
+app/
+components.json
+postcss.config.mjs
+eslint.config.mjs
+public/

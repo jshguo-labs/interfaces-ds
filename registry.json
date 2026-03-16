@@ -1,0 +1,1102 @@
+{
+    "$schema": "https://ui.shadcn.com/schema/registry.json",
+    "name": "interfaces-ds",
+    "homepage": "https://interfacesds.com",
+    "items": [
+        {
+            "name": "utils",
+            "type": "registry:lib",
+            "title": "Utility functions",
+            "description": "Shared helper utilities (cn).",
+            "dependencies": [
+                "clsx",
+                "tailwind-merge"
+            ],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/lib/utils.ts",
+                    "type": "registry:lib",
+                    "target": "lib/utils.ts"
+                }
+            ]
+        },
+        {
+            "name": "hooks",
+            "type": "registry:lib",
+            "title": "Hooks",
+            "description": "Shared React hooks used by components.",
+            "dependencies": [],
+            "registryDependencies": [],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/hooks/use-mobile.ts",
+                    "type": "registry:lib",
+                    "target": "hooks/use-mobile.ts"
+                }
+            ]
+        },
+        {
+            "name": "styles",
+            "type": "registry:style",
+            "title": "Styles",
+            "description": "Design tokens — colors, radius, and typography in oklch.",
+            "registryDependencies": [
+                "@interfaces-ds/motions"
+            ],
+            "css": {
+                "@import \"../styles/ids-styles.css\"": {}
+            },
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/styles/ids-styles.css",
+                    "type": "registry:file",
+                    "target": "styles/ids-styles.css"
+                }
+            ]
+        },
+        {
+            "name": "motions",
+            "type": "registry:style",
+            "title": "Motions",
+            "description": "Required custom keyframes for animation utilities.",
+            "css": {
+                "@import \"../styles/ids-motion.css\"": {}
+            },
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/styles/ids-motion.css",
+                    "type": "registry:file",
+                    "target": "styles/ids-motion.css"
+                }
+            ]
+        },
+        {
+            "name": "accordion",
+            "type": "registry:component",
+            "title": "Accordion",
+            "description": "Accordion component.",
+            "dependencies": [
+                "@carbon/icons-react",
+                "@radix-ui/react-accordion"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/accordion.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "alert-dialog",
+            "type": "registry:component",
+            "title": "Alert Dialog",
+            "description": "Alert Dialog component.",
+            "dependencies": [
+                "@radix-ui/react-alert-dialog",
+                "class-variance-authority"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/button",
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/alert-dialog.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "alert",
+            "type": "registry:component",
+            "title": "Alert",
+            "description": "Alert component.",
+            "dependencies": [
+                "class-variance-authority"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/alert.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "aspect-ratio",
+            "type": "registry:component",
+            "title": "Aspect Ratio",
+            "description": "Aspect Ratio component.",
+            "dependencies": [
+                "@radix-ui/react-aspect-ratio"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/aspect-ratio.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "avatar",
+            "type": "registry:component",
+            "title": "Avatar",
+            "description": "Avatar component.",
+            "dependencies": [
+                "@radix-ui/react-avatar"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/avatar.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "badge",
+            "type": "registry:component",
+            "title": "Badge",
+            "description": "Badge component.",
+            "dependencies": [
+                "@radix-ui/react-slot",
+                "class-variance-authority"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/badge.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "breadcrumb",
+            "type": "registry:component",
+            "title": "Breadcrumb",
+            "description": "Breadcrumb component.",
+            "dependencies": [
+                "@carbon/icons-react",
+                "@radix-ui/react-slot"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/breadcrumb.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "button-group",
+            "type": "registry:component",
+            "title": "Button Group",
+            "description": "Button Group component.",
+            "dependencies": [
+                "@radix-ui/react-slot",
+                "class-variance-authority"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/separator",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/button-group.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "button",
+            "type": "registry:component",
+            "title": "Button",
+            "description": "Button component.",
+            "dependencies": [
+                "@radix-ui/react-slot",
+                "class-variance-authority"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/button.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "calendar",
+            "type": "registry:component",
+            "title": "Calendar",
+            "description": "Calendar component.",
+            "dependencies": [
+                "@carbon/icons-react",
+                "react-day-picker"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/button",
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/calendar.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "card",
+            "type": "registry:component",
+            "title": "Card",
+            "description": "Card component.",
+            "dependencies": [],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/card.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "carousel",
+            "type": "registry:component",
+            "title": "Carousel",
+            "description": "Carousel component.",
+            "dependencies": [
+                "@carbon/icons-react",
+                "embla-carousel-react"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/button",
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/carousel.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "chart",
+            "type": "registry:component",
+            "title": "Chart",
+            "description": "Chart component.",
+            "dependencies": [
+                "recharts"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/chart.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "checkbox",
+            "type": "registry:component",
+            "title": "Checkbox",
+            "description": "Checkbox component.",
+            "dependencies": [
+                "@carbon/icons-react",
+                "@radix-ui/react-checkbox"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/checkbox.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "collapsible",
+            "type": "registry:component",
+            "title": "Collapsible",
+            "description": "Collapsible component.",
+            "dependencies": [
+                "@radix-ui/react-collapsible"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/motions",
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/collapsible.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "command",
+            "type": "registry:component",
+            "title": "Command",
+            "description": "Command component.",
+            "dependencies": [
+                "@carbon/icons-react",
+                "cmdk"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/dialog",
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/command.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "context-menu",
+            "type": "registry:component",
+            "title": "Context Menu",
+            "description": "Context Menu component.",
+            "dependencies": [
+                "@carbon/icons-react",
+                "@radix-ui/react-context-menu"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/context-menu.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "dialog",
+            "type": "registry:component",
+            "title": "Dialog",
+            "description": "Dialog component.",
+            "dependencies": [
+                "@carbon/icons-react",
+                "@radix-ui/react-dialog"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/dialog.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "drawer",
+            "type": "registry:component",
+            "title": "Drawer",
+            "description": "Drawer component.",
+            "dependencies": [
+                "vaul"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/drawer.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "dropdown-menu",
+            "type": "registry:component",
+            "title": "Dropdown Menu",
+            "description": "Dropdown Menu component.",
+            "dependencies": [
+                "@carbon/icons-react",
+                "@radix-ui/react-dropdown-menu"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/dropdown-menu.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "empty",
+            "type": "registry:component",
+            "title": "Empty",
+            "description": "Empty component.",
+            "dependencies": [
+                "class-variance-authority"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/empty.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "field",
+            "type": "registry:component",
+            "title": "Field",
+            "description": "Field component.",
+            "dependencies": [
+                "class-variance-authority"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/label",
+                "@interfaces-ds/separator",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/field.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "hover-card",
+            "type": "registry:component",
+            "title": "Hover Card",
+            "description": "Hover Card component.",
+            "dependencies": [
+                "@radix-ui/react-hover-card"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/hover-card.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "input-group",
+            "type": "registry:component",
+            "title": "Input Group",
+            "description": "Input Group component.",
+            "dependencies": [
+                "class-variance-authority"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/button",
+                "@interfaces-ds/styles",
+                "@interfaces-ds/input",
+                "@interfaces-ds/textarea",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/input-group.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "input-otp",
+            "type": "registry:component",
+            "title": "Input Otp",
+            "description": "Input Otp component.",
+            "dependencies": [
+                "@carbon/icons-react",
+                "input-otp"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/input-otp.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "input",
+            "type": "registry:component",
+            "title": "Input",
+            "description": "Input component.",
+            "dependencies": [
+                "class-variance-authority"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/input.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "item",
+            "type": "registry:component",
+            "title": "Item",
+            "description": "Item component.",
+            "dependencies": [
+                "@radix-ui/react-slot",
+                "class-variance-authority"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/separator",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/item.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "kbd",
+            "type": "registry:component",
+            "title": "Kbd",
+            "description": "Kbd component.",
+            "dependencies": [],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/kbd.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "label",
+            "type": "registry:component",
+            "title": "Label",
+            "description": "Label component.",
+            "dependencies": [
+                "@radix-ui/react-label"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/label.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "menubar",
+            "type": "registry:component",
+            "title": "Menubar",
+            "description": "Menubar component.",
+            "dependencies": [
+                "@carbon/icons-react",
+                "@radix-ui/react-menubar"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/menubar.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "navigation-menu",
+            "type": "registry:component",
+            "title": "Navigation Menu",
+            "description": "Navigation Menu component.",
+            "dependencies": [
+                "@carbon/icons-react",
+                "@radix-ui/react-navigation-menu",
+                "class-variance-authority"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/navigation-menu.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "pagination",
+            "type": "registry:component",
+            "title": "Pagination",
+            "description": "Pagination component.",
+            "dependencies": [
+                "@carbon/icons-react"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/button",
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/pagination.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "popover",
+            "type": "registry:component",
+            "title": "Popover",
+            "description": "Popover component.",
+            "dependencies": [
+                "@radix-ui/react-popover"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/popover.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "progress",
+            "type": "registry:component",
+            "title": "Progress",
+            "description": "Progress component.",
+            "dependencies": [
+                "@radix-ui/react-progress"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/progress.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "radio-group",
+            "type": "registry:component",
+            "title": "Radio Group",
+            "description": "Radio Group component.",
+            "dependencies": [
+                "@carbon/icons-react",
+                "@radix-ui/react-radio-group"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/radio-group.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "resizable",
+            "type": "registry:component",
+            "title": "Resizable",
+            "description": "Resizable component.",
+            "dependencies": [
+                "@carbon/icons-react",
+                "react-resizable-panels"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/resizable.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "scroll-area",
+            "type": "registry:component",
+            "title": "Scroll Area",
+            "description": "Scroll Area component.",
+            "dependencies": [
+                "@radix-ui/react-scroll-area"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/scroll-area.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "select",
+            "type": "registry:component",
+            "title": "Select",
+            "description": "Select component.",
+            "dependencies": [
+                "@carbon/icons-react",
+                "@radix-ui/react-select"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/select.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "separator",
+            "type": "registry:component",
+            "title": "Separator",
+            "description": "Separator component.",
+            "dependencies": [
+                "@radix-ui/react-separator"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/separator.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "sheet",
+            "type": "registry:component",
+            "title": "Sheet",
+            "description": "Sheet component.",
+            "dependencies": [
+                "@carbon/icons-react",
+                "@radix-ui/react-dialog"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/sheet.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "sidebar",
+            "type": "registry:component",
+            "title": "Sidebar",
+            "description": "Sidebar component.",
+            "dependencies": [
+                "@carbon/icons-react",
+                "@radix-ui/react-slot",
+                "class-variance-authority"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/button",
+                "@interfaces-ds/styles",
+                "@interfaces-ds/hooks",
+                "@interfaces-ds/input",
+                "@interfaces-ds/separator",
+                "@interfaces-ds/sheet",
+                "@interfaces-ds/skeleton",
+                "@interfaces-ds/tooltip",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/sidebar.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "skeleton",
+            "type": "registry:component",
+            "title": "Skeleton",
+            "description": "Skeleton component.",
+            "dependencies": [
+                "class-variance-authority"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/skeleton.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "slider",
+            "type": "registry:component",
+            "title": "Slider",
+            "description": "Slider component.",
+            "dependencies": [
+                "@radix-ui/react-slider"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/slider.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "sonner",
+            "type": "registry:component",
+            "title": "Sonner",
+            "description": "Sonner component.",
+            "dependencies": [
+                "@carbon/icons-react",
+                "next-themes",
+                "sonner"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/sonner.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "spinner",
+            "type": "registry:component",
+            "title": "Spinner",
+            "description": "Spinner component.",
+            "dependencies": [
+                "@carbon/icons-react"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/spinner.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "switch",
+            "type": "registry:component",
+            "title": "Switch",
+            "description": "Switch component.",
+            "dependencies": [
+                "@radix-ui/react-switch"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/switch.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "table",
+            "type": "registry:component",
+            "title": "Table",
+            "description": "Table component.",
+            "dependencies": [],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/table.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "tabs",
+            "type": "registry:component",
+            "title": "Tabs",
+            "description": "Tabs component.",
+            "dependencies": [
+                "@radix-ui/react-tabs"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/tabs.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "textarea",
+            "type": "registry:component",
+            "title": "Textarea",
+            "description": "Textarea component.",
+            "dependencies": [],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/textarea.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "toggle-group",
+            "type": "registry:component",
+            "title": "Toggle Group",
+            "description": "Toggle Group component.",
+            "dependencies": [
+                "@radix-ui/react-toggle-group",
+                "class-variance-authority"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/toggle",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/toggle-group.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "toggle",
+            "type": "registry:component",
+            "title": "Toggle",
+            "description": "Toggle component.",
+            "dependencies": [
+                "@radix-ui/react-toggle",
+                "class-variance-authority"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/toggle.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        },
+        {
+            "name": "tooltip",
+            "type": "registry:component",
+            "title": "Tooltip",
+            "description": "Tooltip component.",
+            "dependencies": [
+                "@radix-ui/react-tooltip"
+            ],
+            "registryDependencies": [
+                "@interfaces-ds/styles",
+                "@interfaces-ds/utils"
+            ],
+            "files": [
+                {
+                    "path": "registry/interfaces-ds/components/ui/tooltip.tsx",
+                    "type": "registry:component"
+                }
+            ]
+        }
+    ]
+}
