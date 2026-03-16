@@ -2,9 +2,6 @@
   "name": "core",
   "version": "0.1.0",
   "private": false,
-  "exports": {
-    "./registry/interfaces-ds/styles/ids-styles.css": "./registry/interfaces-ds/styles/ids-styles.css"
-  },
   "scripts": {
     "dev": "next dev -p 10000",
     "build": "next build",
